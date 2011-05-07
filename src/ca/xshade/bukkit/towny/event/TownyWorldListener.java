@@ -16,7 +16,7 @@ public class TownyWorldListener extends WorldListener {
 	}
 	
 	@Override
-	public void onWorldLoaded(WorldEvent event) {
+	public void onWorldLoad(WorldEvent event) {
 		String worldName = event.getWorld().getName();
 		try {
 			plugin.getTownyUniverse().newWorld(worldName);
